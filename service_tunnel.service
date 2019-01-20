@@ -4,7 +4,7 @@ After=network.target sshd.service
 
 [Service]
 Type=simple
-ExecStart=sudo -u {{service_user}} {{path}}/service_tunnel.sh
+ExecStart=/usr/bin/sudo -u {{service_user}} {{path}}/service_tunnel.sh
 ExecStop=/bin/systemctl kill service_tunnel
 Restart=always
 KillMode=process
