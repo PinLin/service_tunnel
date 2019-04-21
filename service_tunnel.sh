@@ -6,5 +6,10 @@ while true; do
 done &
 
 while true; do
+    # CHIP Door-Unlocker
+    ssh -o "ExitOnForwardFailure yes" -NR 28701:localhost:8701 pinlin@ntut.com.tw
+done &
+
+while true; do
     sleep 10s
 done
