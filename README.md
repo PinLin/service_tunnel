@@ -1,16 +1,11 @@
-# Service Tunnel for CHIP
-Create SSH tunnel Systemd service to my GCP VPS for services on CHIP.
+# Service Tunnel (running on C.H.I.P)
 
-## Service
-+ `CHIP SSH`: 
-  +  **localhost:22**
-  +  **ntut.com.tw:20023**
+Systemd service for creating SSH tunnels to my VPS.
 
-+ `CHIP Web`: 
-  +  **localhost:80**
-  +  **ntut.com.tw:20080**
+[List of Services](SERVICES.md)
 
 ## Install
+
 1. Clone and enter it.
 ```bash
 git clone https://git.ntut.com.tw/PinLin/service_tunnel.git
@@ -25,15 +20,4 @@ git checkout chip
 3. Execute `install.sh`
 ```bash
 sudo ./install.sh $USER
-```
-
-## Run
-Start service.
-```bash
-sudo systemctl start service_tunnel
-```
-
-Stop service.
-```bash
-sudo systemctl stop service_tunnel
 ```
