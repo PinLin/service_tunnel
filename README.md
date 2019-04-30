@@ -6,9 +6,9 @@ Create SSH tunnel Systemd service to my GCP VPS for services on CHIP.
   +  **localhost:22**
   +  **ntut.com.tw:20023**
 
-+ `CHIP Door-Unlocker`: 
-  +  **localhost:8701**
-  +  **ntut.com.tw:28701**
++ `CHIP Web`: 
+  +  **localhost:80**
+  +  **ntut.com.tw:20080**
 
 ## Install
 1. Clone and enter it.
